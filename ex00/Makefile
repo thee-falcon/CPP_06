@@ -6,13 +6,13 @@
 #    By: omakran <omakran@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/01 17:05:33 by omakran           #+#    #+#              #
-#    Updated: 2024/05/01 17:08:29 by omakran          ###   ########.fr        #
+#    Updated: 2024/05/01 18:36:09 by omakran          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 EXEC = Scalar
 
-SRCS = Scalar.cpp
+SRCS = Scalar.cpp main.cpp
 
 OBJS := $(SRCS:.cpp=.o)
 

@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 17:05:36 by omakran           #+#    #+#             */
-/*   Updated: 2024/05/01 17:49:17 by omakran          ###   ########.fr       */
+/*   Updated: 2024/05/01 22:51:29 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 
 # include <iostream>
 # include <string>
+#include <cmath>
+#include <iomanip>
+
+
+
 
 class ScalarConverter
 {
@@ -29,13 +34,13 @@ private:
     ScalarConverter( const ScalarConverter& other );
     // assignement operator:
     ScalarConverter& operator=( const ScalarConverter& other );
+    // destructor:
+    ~ScalarConverter();
 public:
 
     // static method:
-    static void convert( std::string& arg);
+    static void convert( const std::string& arg);
 
-    // destructor:
-    ~ScalarConverter();
 };
 
 #endif
