@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 17:05:35 by omakran           #+#    #+#             */
-/*   Updated: 2024/05/01 22:50:40 by omakran          ###   ########.fr       */
+/*   Updated: 2024/05/02 20:29:22 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,14 @@ void ScalarConverter::convert(const std::string& arg) {
     int     i;
     float   f;
     double  d;
-    float   num;
-    // Convert the string to a float
+    /*
+    The variable num is declared as a double, which means it can hold floating-point numbers
+    with a higher precision compared to float.
+    */
+    double   num;
+    
+    // is used to convert a string to a float value.
+    // However, in this case, the result of std::stof() is assigned to a double variable num.
     num = std::stof(arg);
     c = static_cast<char>(num);
     i = static_cast<int>(num);
@@ -44,6 +50,8 @@ void ScalarConverter::convert(const std::string& arg) {
     if (i >= 32 && i <= 126)
         std::cout << "char: '" << c << "'" << std::endl;
     else if (std::isnan(num) || std::isinf(num))
+
+    
         std::cout << "char: impossible\n";
     else
         std::cout << "char: Non displayable\n";
