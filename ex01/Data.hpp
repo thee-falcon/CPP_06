@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 22:23:57 by omakran           #+#    #+#             */
-/*   Updated: 2024/05/02 22:24:27 by omakran          ###   ########.fr       */
+/*   Updated: 2024/05/02 23:20:57 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 struct Data {
     int value;
-    Data(int val) : value(val) {}
+
 };
 
 #endif
